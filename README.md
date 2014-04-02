@@ -8,7 +8,8 @@ Dokumentacja:
   - https://www.relishapp.com/rspec/rspec-expectations/v/3-0/docs
   - https://www.relishapp.com/rspec/rspec-mocks/v/3-0/docs
 
-[Rails Testing for Zombies](https://www.codeschool.com/courses/rails-testing-for-zombies).
+[Rails Testing for Zombies](https://www.codeschool.com/courses/rails-testing-for-zombies)
+(Unit Testing).
 
 
 ### Emacs 24

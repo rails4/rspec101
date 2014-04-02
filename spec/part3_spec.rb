@@ -1,5 +1,6 @@
 $LOAD_PATH << File.expand_path('../../lib', __FILE__)
-require 'part1'
+
+require 'part3'
 
 describe "BookInStock" do
   it "should be defined" do
@@ -9,26 +10,26 @@ describe "BookInStock" do
   describe 'getters and setters' do
     before(:each)  { @book = BookInStock.new('isbn1', 33.8) }
     it 'should set ISBN' do
-      @book.isbn.should == 'isbn1'
+      expect(@book.isbn).to eq('isbn1')
     end
     it 'should set price' do
-      @book.price.should == 33.8
+      expect(@book.price).to eq(33.8)
     end
     it 'should be able to change ISBN' do
       @book.isbn = 'isbn2'
-      @book.isbn.should == 'isbn2'
+      expect(@book.isbn).to eq('isbn2')
     end
     it 'should be able to change price' do
       @book.price = 300.0
-      @book.price.should == 300.0
+      expect(@book.price).to eq(300.0)
     end
   end
   describe "#price_as_string" do
     it "should be defined" do
-      BookInStock.new('isbn1', 10).should respond_to(:price_as_string)
+      expect(BookInStock.new('isbn1', 10)).to respond_to(:price_as_string)
     end
     it "should display 1.1 as $1.10" do
-      BookInStock.new('isbn11', 1.1).price_as_string.should == '$1.10'
+      expect(BookInStock.new('isbn11', 1.1).price_as_string).to eq('$1.10')
     end
   end
 end

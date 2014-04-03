@@ -1,5 +1,8 @@
-$LOAD_PATH << File.expand_path('../../lib', __FILE__)
-require 'part1'
+require_relative '../lib/part1'
+
+# TODO (refactor): modify $LOAD_PATH
+# $LOAD_PATH << File.expand_path('../../lib', __FILE__)
+# require 'part1'
 
 # https://www.relishapp.com/rspec/rspec-expectations/v/3-0/docs/built-in-matchers
 
@@ -18,6 +21,7 @@ describe "#max_2_sum" do
   it "should be defined" do
     expect { max_2_sum([1,2,3]) }.not_to raise_error
   end
+
   it "returns the correct sum" do
     expect(max_2_sum([1,2,3,4,5])).to be_a_kind_of(Fixnum)
     expect(max_2_sum([1,2,3,4,100])).to eq(104)

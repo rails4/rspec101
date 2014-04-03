@@ -12,12 +12,18 @@ Dokumentacja:
 (Unit Testing).
 
 
+### SublimeText
+
+[Sublime Text 2 Ruby Tests](https://github.com/maltize/sublime-text-2-ruby-tests#usage).
+
+
 ### Emacs 24
 
 Install *rvm* and *rspec-mode* (copy snippets).
 
 * `\C-c ,t` — toggle back and forth between a spec and it’s target
 * `\C-c ,s` — verify the example defined at the point of the current buffer
+* `\C-c ,v` — verify the spec file associated with the current buffer
 * `\C-c ,a` — run spec for entire project
 
 More:
@@ -25,19 +31,17 @@ More:
 * `\C-c ,d` — toggle the pendingness of the example at the point
   * disable the example at the point by making it pending
   * reenable the disabled example at the point
-* `\C-c ,v` — verify the spec file associated with the current buffer
 * `\C-c ,r` — re-run the last verification process
-* `\C-c ,m` — run all specs related to the current buffer
 * `\C-c ,c` – run the current spec and all after it
+* `\C-c ,m` — run all specs related to the current buffer
+
 
 ### Git
 
-Push local branches to Github:
+Push local branch named `foo` to Github:
 
 ```sh
-git push origin part1
-git push origin part2
-git push origin part3
+git push origin foo
 ```
 
 

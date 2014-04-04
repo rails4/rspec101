@@ -1,24 +1,28 @@
 # RSpec
 
-Dokumentacja:
+[Better Specs](http://betterspecs.org/).
 
-1. [Better Specs](http://betterspecs.org/).
-1. Dokumentacja [RSpec](https://www.relishapp.com/rspec/):
-  - https://www.relishapp.com/rspec/rspec-core/v/3-0/docs
-  - https://www.relishapp.com/rspec/rspec-expectations/v/3-0/docs
-  - https://www.relishapp.com/rspec/rspec-mocks/v/3-0/docs
+[RSpec documentation](http://rspec.info/):
+
+* [rspec-rails](https://github.com/rspec/rspec-rails)
+* [rspec-collection_matchers](https://github.com/rspec/rspec-collection_matchers)
+* [rspec-expectations](https://github.com/rspec/rspec-expectations)
+* [rspec-core](https://github.com/rspec/rspec-core)
+* [rspec-mocks](https://github.com/rspec/rspec-mocks)
+
+Przydatne:
 
 * [Rails Testing for Zombies](https://www.codeschool.com/courses/rails-testing-for-zombies)
   (Unit Testing).
 * [A Guide to Testing Rails Applications](http://edgeguides.rubyonrails.org/testing.html)
 
 
-### SublimeText
+### Konfiguracja edytora SublimeText
 
 [Sublime Text 2 Ruby Tests](https://github.com/maltize/sublime-text-2-ruby-tests#usage).
 
 
-### Emacs 24
+### Konfiguracja edytora Emacs 24
 
 Install *rvm* and *rspec-mode* (copy snippets).
 
@@ -65,7 +69,7 @@ an argument and returns the sum of its two largest elements. For an
 empty array it should return zero. For an array with just one element,
 it should return that element.
 
-Define a method `sum_to_n?(array)` that takes an array of integers and
+Define a method `sum_to_n?(array, n)` that takes an array of integers and
 an additional integer, n, as arguments and returns true if any two
 elements in the array of integers sum to n. An empty array should sum
 to zero by definition.
@@ -88,9 +92,9 @@ as they could help tremendously with these exercises.
 Define a method `hello(name)` that takes a string representing a name
 and returns the string "Hello, " concatenated with the name.
 
-Define a method `starts_with_consonant?(s)` that takes a string and
-returns true if it starts with a consonant and false otherwise. (For
-our purposes, a consonant is any letter other than A, E, I, O, U.)
+Define a method `starts_with_vowel?(s)` that takes a string and
+returns true if it starts with a vowel and false otherwise. (For
+our purposes, a vowel is any letter from A, E, I, O, U.)
 NOTE: be sure it works for both upper and lower case and for
 nonletters!
 
@@ -100,8 +104,8 @@ multiple of 4. NOTE: be sure it returns false if the string is not a
 valid binary number!
 
 
-You can find starter code in `lib/part1.rb`. To run the "sanity
-check" tests, run `rspec spec/part1_spec.rb` from the top-level
+You can find starter code in `lib/part2.rb`. To run the "sanity
+check" tests, run `rspec spec/part2_spec.rb` from the top-level
 directory of the homework distribution. The line numbers in the error
 report will give you guidance as to which tests failed.
 

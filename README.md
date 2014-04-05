@@ -1,4 +1,4 @@
-# RSpec
+## RSpec
 
 [Better Specs](http://betterspecs.org/).
 
@@ -15,6 +15,14 @@ Przydatne:
 * [Rails Testing for Zombies](https://www.codeschool.com/courses/rails-testing-for-zombies)
   (Unit Testing).
 * [A Guide to Testing Rails Applications](http://edgeguides.rubyonrails.org/testing.html)
+
+
+## [Travis](https://travis-ci.org/)
+
+* [getting started](http://docs.travis-ci.com/)
+* [.travis.yml](.travis.yml)
+* install *travis-lint* gem
+* [status images](http://docs.travis-ci.com/user/status-images/)
 
 
 ### Konfiguracja edytora SublimeText

@@ -19,7 +19,7 @@ describe "#starts_with_vowel?" do
     expect { starts_with_vowel?("b") }.not_to raise_error
   end
 
-  it "The starts_with_consonant? method returns the correct boolean" do
+  it "The starts_with_vowel? method returns the correct boolean" do
     expect(starts_with_vowel?("asdfgh")).to be(true),
          "Incorrect results for input: \"asdfgh\""
     expect(starts_with_vowel?("Veeeeeeee")).to be(false),

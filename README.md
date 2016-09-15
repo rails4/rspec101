@@ -25,39 +25,6 @@ Przydatne:
 * [status images](http://docs.travis-ci.com/user/status-images/)
 
 
-### Konfiguracja edytora SublimeText
-
-[Sublime Text 2 Ruby Tests](https://github.com/maltize/sublime-text-2-ruby-tests#usage).
-
-
-### Konfiguracja edytora Emacs 24
-
-Install *rvm* and *rspec-mode* (copy snippets).
-
-* `\C-c ,t` — toggle back and forth between a spec and it’s target
-* `\C-c ,s` — verify the example defined at the point of the current buffer
-* `\C-c ,v` — verify the spec file associated with the current buffer
-* `\C-c ,a` — run spec for entire project
-
-More:
-
-* `\C-c ,d` — toggle the pendingness of the example at the point
-  * disable the example at the point by making it pending
-  * reenable the disabled example at the point
-* `\C-c ,r` — re-run the last verification process
-* `\C-c ,c` – run the current spec and all after it
-* `\C-c ,m` — run all specs related to the current buffer
-
-
-### Git
-
-Push local branch named `foo` to Github:
-
-```sh
-git push origin foo
-```
-
-
 ## Basic Ruby Practice
 
 Check the documentation on
